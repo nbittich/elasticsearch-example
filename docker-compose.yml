@@ -28,7 +28,7 @@ services:
     networks:
       somenetwork:
     volumes:
-      - ./data/suricata/logs/eve.json:/suricata-logs/eve.json
+      - ./data/suricata/logs:/suricata-logs
       - ./config/filebeats/filebeat.yml:/usr/share/filebeat/filebeat.yml
   suricata:
     build:
